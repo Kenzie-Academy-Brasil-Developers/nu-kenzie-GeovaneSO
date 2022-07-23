@@ -1,0 +1,10 @@
+.header{
+    width: 100vw;
+}
+
+.header__container{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 15px;
+}

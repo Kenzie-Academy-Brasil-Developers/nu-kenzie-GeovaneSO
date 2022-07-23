@@ -1,0 +1,33 @@
+.box__form{
+    width: 363px;
+    height: 351px;
+    padding: 20px;
+    border: 1px solid #E9ECEF;
+border-radius: 4px;
+}
+form{
+    display: flex;
+    flex-direction: column;
+}
+.box__input{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+.box__input input{
+    display: flex;
+flex-direction: row;
+align-items: center;
+padding: 0px 16px;
+gap: 10px;
+
+width: 314px;
+height: 53px;
+/* grey-0 */
+
+background: #F8F9FA;
+/* grey-0 */
+
+border: 2px solid #F8F9FA;
+border-radius: 8px;
+}
