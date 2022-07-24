@@ -1,23 +1,20 @@
 import {IoMdTrash} from 'react-icons/io'
 // import Card from './Components/Lista';
 
-function Button({listTransactions, index}){
+function Button({listTransactions, setListTransactions, index, description}){
     return(
-        <button  className={index} onClick={((event, index) => {
-            const splice = listTransactions.splice(1, index);
-            const a = event;
-            console.log(a)
-            // if( event.target.className === 'BUTTON' ){
-            // console.log(listTransactions)
- 
-            // }
+        <button value={description} onClick={((event, index) => {
 
-                  
+            const valueButton = event.currentTarget.value;
 
+            const filter = listTransactions.filter((transaction) =>
+                transaction.description !== valueButton
+            );
+
+            setListTransactions(filter)           
         })}>
             <IoMdTrash/>
         </button>
-
     )
 }
 

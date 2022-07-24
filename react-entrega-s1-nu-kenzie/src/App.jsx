@@ -16,14 +16,17 @@ function App() {
       <main>
         <section className='section--form'>
           <Form listTransactions={listTransactions} setListTransactions={setListTransactions}/>
+          {
+            listTransactions.length > 0 &&
+            <TotalMoney listTransactions={listTransactions}/>
 
-          <TotalMoney listTransactions={listTransactions}/>
+          }
         </section>
-        <section>
-          <Nav listTransactions={listTransactions}/>
+        <section className='section--list'>
+          <Nav listTransactions={listTransactions} setListTransactions={setListTransactions}/>
           <ul>
             { listTransactions.map((transaction, index) => (
-                <Card key={index} transaction={transaction} listTransactions={listTransactions}/>
+                <Card key={index} transaction={transaction} setListTransactions={setListTransactions} listTransactions={listTransactions}/>
               ))
             }       
           </ul>

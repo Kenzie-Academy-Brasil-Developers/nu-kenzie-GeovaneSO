@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import React from 'react';
+import {TbCurrencyReal} from 'react-icons/tb'
 import './style.css';
 function Form({listTransactions, setListTransactions}){
     const [description, setDescription] = useState('');
@@ -36,27 +37,30 @@ function Form({listTransactions, setListTransactions}){
             <form >
                 <div className="box__input">
                     <label htmlFor="description">Decrição</label>
+
                     <input 
-                    placeholder="Digte aqui sua descrição" 
-                    type="text" 
-                    name="description" 
-                    id="edscripition"
-                    value={description}
-                    onChange={(event) => setDescription(event.target.value)}/>
+                        placeholder="Digte aqui sua descrição" 
+                        type="text" 
+                        name="description" 
+                        id="edscripition"
+                        value={description}
+                        onChange={(event) => setDescription(event.target.value)}
+                    />
 
                     <span>Ex: Compra de roupas</span>
                 </div>
-                <div>
+                <div className='box__valores'>
                     <div className="box__valor">
                         <span>Valor</span>
-                        <div>
+                        <div className='box--input'>
                             <input 
                             type="text" 
-                            name="" 
-                            id="" 
+                            name="value" 
+                            id="value" 
                             value={value}
                             onChange={(event) => setValue(event.target.value)}/>
-                            R$
+                            <span>R$</span>
+                            {/* <TbCurrencyReal className='ic'/> */}
                         </div>
                     </div>
                     <div className="box__tipo--valor">
@@ -70,7 +74,7 @@ function Form({listTransactions, setListTransactions}){
                         </select>
                     </div>
                 </div>
-                <button type="button"onClick={() => handleSubmit()}>Inserir Valor</button>
+                <button className='btn--valor' type="button"onClick={() => handleSubmit()}>Inserir Valor</button>
             </form>
         </div>
    )

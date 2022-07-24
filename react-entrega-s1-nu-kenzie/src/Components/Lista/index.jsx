@@ -1,5 +1,5 @@
 import Button from "../Button";
-function Card({listTransactions, transaction, index}){
+function Card({listTransactions, transaction, index, setListTransactions}){
     return (
         <li id={index}>
             <div>
@@ -14,7 +14,7 @@ function Card({listTransactions, transaction, index}){
                 } 
             </div>
             <div className='box__btn'>
-                <Button listTransactions={listTransactions} index={index}/>
+                <Button description={transaction.description} setListTransactions={setListTransactions} listTransactions={listTransactions} index={index}/>
             </div>
         </li>
     );

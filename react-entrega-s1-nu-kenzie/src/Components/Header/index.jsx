@@ -3,12 +3,14 @@ import './style.css';
 function Header(){
     return (
         <header className="header">
-            <div className="header__container">
-               <figure>
-                    <img src={logo} className="logo" alt="logo" />
-                </figure>
-                <button>Inicio</button>
-            </div>
+                <div className='box'>
+                    <figure>
+                        <img src={logo} className="logo" alt="logo" />
+                    </figure>
+                </div>
+                <div className='box'>
+                    <button>Inicio</button> 
+                </div>
         </header>
     );
 }

@@ -1,32 +1,36 @@
-.App {
+body, main, .App, form,a,figure, fieldset, legend, ul, li, label, input, button {
   text-align: center;
   margin: 0;
+  box-sizing: border-box;
+  font-size: 100%;
+  border: none;    
+  text-decoration: none;
+  list-style: none;
+}
+body{
+  width: 100vw;
+  height: 100vh;
 }
 
-.section--form{
-  /* width: 100vw; */
-  /* height: 100vh; */
+/* main{
+  display: flex;
+
+  gap: 40px;
+
+  margin: 0 60px;
 }
+
+.section--list{
+  width: 500px;
+
+  margin: 0;
+} */
+
 
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
     animation: App-logo-spin infinite 20s linear;
   }
-}
-
-.App-header {
-  background-color: #282c34;
-  /* min-height: 100vh; */
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
 }
 
 @keyframes App-logo-spin {

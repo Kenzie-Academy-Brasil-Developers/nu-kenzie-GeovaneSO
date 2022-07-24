@@ -1,0 +1,23 @@
+.totalMoney{
+    display: flex;
+    flex-direction: column;
+    /* align-items: flex-start; */
+
+        width: 280px;
+        padding: 20px;
+margin: 0 auto;
+margin-top: 20px;
+
+border: 1px solid #E9ECEF;
+border-radius: 4px;
+}
+.box__value{
+    display: flex;
+    justify-content: space-between;
+    /* gap: 145px; */
+
+}
+
+.span--value{
+    display: flex;
+}
