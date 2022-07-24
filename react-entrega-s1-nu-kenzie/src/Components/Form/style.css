@@ -1,16 +1,22 @@
 .box__form{
+    width: 273px;
     height: 290px;
     padding: 20px;
 
     margin: 0 30px;
+    /* margin-top: 20px; */
 
     border: 1px solid #E9ECEF;
     border-radius: 4px;
+
+    font-family: 'Nunito', sans-serif;
 }
 form{
     display: flex;
     flex-direction: column;
     gap: 20px;
+    font-family: 'Nunito', sans-serif;
+    font-style: normal;
 }
 .box__input{
     display: flex;
@@ -19,13 +25,6 @@ form{
     
 }
 .box__input input{
-    /* display: flex; */
-    /* align-items: center; */
-/* padding: 0px 5px; */
-/* gap: 10px; */
-    /* padding: 0;
-    margin: 0; */
-
     width: 275px;
     height: 45px;
 
@@ -62,8 +61,20 @@ form{
     background: #F8F9FA;   
     border-radius: 8px;
 
+    font-family: 'Nunito', sans-serif;
 }
+#description{
+    margin-bottom: 20px;
+}
+.span-compra{
+    font-family: 'Nunito', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 20px;
 
+    color: #868E96;
+}
 #value, select{
     height: 45px;
     width: 110px;
@@ -74,15 +85,29 @@ form{
     border: 2px solid #F8F9FA;
     border-radius: 8px;
 
+    font-family: 'Nunito', sans-serif;
 }
 #value:focus{
     border: none;
+    font-family: 'Nunito', sans-serif;
+
 }
 .box__tipo--valor{
     display: flex;
     flex-direction: column;
     align-items: flex-start;
     gap: 10px;
+    font-family: 'Nunito', sans-serif;
+}
+
+.span-type{
+    font-family: 'Nunito', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 22px;
+
+    color: #212529;
 }
 .btn--valor{
     width: 100%;
@@ -90,4 +115,23 @@ form{
 
     color: white    ;
     background-color: #FD377E;
+    cursor: pointer;
+}
+
+.span-valor{
+    font-family: 'Nunito', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 22px;
+
+    color: #212529;
+}
+@media(min-width: 600px){
+    .box__form{
+        height: 340px;
+    }
+    form{
+        gap: 40px;
+    }
 }

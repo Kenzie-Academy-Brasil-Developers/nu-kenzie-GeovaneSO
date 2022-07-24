@@ -3,22 +3,17 @@
     justify-content: space-between;
     align-items: center;
 
-    height: 60px;
-    padding: 0 30px;
+    /* width: 100%; */
+    height: 80px;
+    padding: 0 28x;
     
     margin-bottom: 50px;
 
     background: #F8F9FA;
     box-shadow: 0px 4px 32px -12px rgba(0, 0, 0, 0.25);
 }
-/* .header{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
 
-    width: 100vw;
-} */
-button{
+.btn-inicio{
     width: 64px;
     height: 30px;
 
@@ -30,8 +25,21 @@ button{
     cursor: pointer;
 }
 
-button:hover{
+.btn-inicio:hover{
     
     border: 1.4px solid #FD377E;
 
+}
+.btn-inicio:focus{
+    background-color: #FD377E;
+    color: white;
+}
+
+@media(min-width:700px){
+    .header{
+ 
+        justify-content: space-around;
+        gap: 600px;
+        
+    }
 }

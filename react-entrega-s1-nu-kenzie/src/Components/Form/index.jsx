@@ -42,16 +42,16 @@ function Form({listTransactions, setListTransactions}){
                         placeholder="Digte aqui sua descrição" 
                         type="text" 
                         name="description" 
-                        id="edscripition"
+                        id="description"
                         value={description}
                         onChange={(event) => setDescription(event.target.value)}
                     />
 
-                    <span>Ex: Compra de roupas</span>
+                    <span className='span-compra'>Ex: Compra de roupas</span>
                 </div>
                 <div className='box__valores'>
                     <div className="box__valor">
-                        <span>Valor</span>
+                        <span className='span-valor'>Valor</span>
                         <div className='box--input'>
                             <input 
                             type="text" 
@@ -64,7 +64,7 @@ function Form({listTransactions, setListTransactions}){
                         </div>
                     </div>
                     <div className="box__tipo--valor">
-                        <span>Tipo de valor</span>
+                        <span className='span-type'>Tipo de valor</span>
                         <select 
                         name="type" 
                         id="type"

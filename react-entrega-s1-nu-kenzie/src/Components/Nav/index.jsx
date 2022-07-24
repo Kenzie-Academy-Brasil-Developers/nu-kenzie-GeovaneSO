@@ -1,3 +1,4 @@
+import './style.css';
 function Nav({listTransactions, setListTransactions}){
 
     function filter (){
@@ -23,7 +24,7 @@ function Nav({listTransactions, setListTransactions}){
     
     return(
        <div className='box__nav'>
-            <span>Resumo financeiro</span>
+            <h3 className='resumo'>Resumo financeiro</h3>
             <nav>
                 <button className='btn__todos' onClick={all}>Todos</button>
                 <button className='btn__entradas' onClick={filter}>Entradas</button>

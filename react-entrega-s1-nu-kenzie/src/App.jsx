@@ -1,10 +1,11 @@
+import React from 'react';
+import { useState } from 'react';
 import Header from './Components/Header';
 import Form from './Components/Form';
 import Nav from './Components/Nav';
 import Card from './Components/Lista';
 import TotalMoney from './Components/TotalMoney';
-import React from 'react';
-import { useState } from 'react';
+import CardPadrão from './Components/Lista-Padrão';
 import './App.css';
 
 function App() {
@@ -25,9 +26,17 @@ function App() {
         <section className='section--list'>
           <Nav listTransactions={listTransactions} setListTransactions={setListTransactions}/>
           <ul>
-            { listTransactions.map((transaction, index) => (
+            { 
+              listTransactions.length === 0 ?
+              <>
+                <CardPadrão/>
+                <CardPadrão/>
+                <CardPadrão/>
+              </>
+              :
+              listTransactions.map((transaction, index) => (
                 <Card key={index} transaction={transaction} setListTransactions={setListTransactions} listTransactions={listTransactions}/>
-              ))
+              ))                
             }       
           </ul>
         </section>

@@ -1,0 +1,51 @@
+.li__padrão{
+    display: flex;
+    flex-direction: column;
+
+    width: 300px;
+    height: 95px;
+
+    gap: 20px;
+
+    padding: 20px;
+
+    background: #F8F9FA;
+
+    border-radius: 4px;
+    border-left: 4px solid   #E9ECEF;
+}
+.box__padrão--1{
+    width: 260px;
+
+    background: #E9ECEF;
+}
+
+.box__padrão--1 p{
+    color:  #E9ECEF;
+    margin: 0;
+}
+
+.box__padrão--2{
+    width: 90px;
+
+    background: #E9ECEF;
+}
+
+.box__padrão--2 p{
+    color:  #E9ECEF;
+    margin: 0;
+}
+
+@media(min-width:700px){
+    .li__padrão{
+        min-width: 500px;
+
+    }
+    .box__padrão--1{
+        width: 460px;
+    }
+    .box__padrão--2{
+        width: 100px;
+    }
+  
+}

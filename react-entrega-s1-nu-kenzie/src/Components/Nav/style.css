@@ -1,0 +1,89 @@
+.box__nav{
+
+}
+
+.resumo{
+    font-family: 'Nunito', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 30px;
+
+    margin: 0;
+
+    color: #212529;
+}
+nav{
+    display: flex;
+    justify-content: center;
+    gap: 20px;   
+}
+.btn__todos{
+    width: 60px;
+    height: 40px;
+
+    border: 1.4px solid #E9ECEF;
+    border-radius: 8px;
+
+    background: #E9ECEF;
+
+    cursor: pointer;
+}
+.btn__entradas{
+    width: 80px;
+    height: 40px;
+
+    border: 1.4px solid #E9ECEF;
+    border-radius: 8px;
+
+    background: #E9ECEF;
+
+    cursor: pointer;
+}
+
+.btn__despesas{
+    width: 90px;
+    height: 40px;
+
+    border: 1.4px solid #E9ECEF;
+    border-radius: 8px;
+
+    background: #E9ECEF;
+
+    cursor: pointer;
+}
+
+.btn__todos:hover{
+    border: 1.4px solid #FD377E;
+}
+
+.btn__entradas:hover{
+    border: 1.4px solid #FD377E;
+}
+
+.btn__despesas:hover{
+    border: 1.4px solid #FD377E;
+}
+
+.btn__todos:focus{
+    background-color: #FD377E;
+    color: white;
+}
+.btn__entradas:focus{
+    background-color: #FD377E;
+    color: white;
+}
+.btn__despesas:focus{
+    background-color: #FD377E;
+    color: white;
+}
+
+@media(min-width:1000px){
+    .box__nav{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-right: 30px;
+        /* gap: 15px; */
+    }
+}

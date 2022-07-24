@@ -1,9 +1,10 @@
-import {IoMdTrash} from 'react-icons/io'
+import {IoMdTrash} from 'react-icons/io';
+import './style.css';
 // import Card from './Components/Lista';
 
 function Button({listTransactions, setListTransactions, index, description}){
     return(
-        <button value={description} onClick={((event, index) => {
+        <button id='btn--list' value={description} onClick={((event, index) => {
 
             const valueButton = event.currentTarget.value;
 

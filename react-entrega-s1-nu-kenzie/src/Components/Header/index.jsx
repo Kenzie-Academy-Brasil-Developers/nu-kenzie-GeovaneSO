@@ -9,7 +9,7 @@ function Header(){
                     </figure>
                 </div>
                 <div className='box'>
-                    <button>Inicio</button> 
+                    <button className='btn-inicio'>Inicio</button> 
                 </div>
         </header>
     );
