@@ -1,6 +1,5 @@
 import {IoMdTrash} from 'react-icons/io';
 import './style.css';
-// import Card from './Components/Lista';
 
 function Button({listTransactions, setListTransactions, index, description}){
     return(

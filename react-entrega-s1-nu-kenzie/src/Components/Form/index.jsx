@@ -1,6 +1,5 @@
 import { useState } from 'react';
 import React from 'react';
-import {TbCurrencyReal} from 'react-icons/tb'
 import './style.css';
 function Form({listTransactions, setListTransactions}){
     const [description, setDescription] = useState('');

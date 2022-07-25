@@ -3,6 +3,7 @@ import './style.css';
 function Header(){
     return (
         <header className="header">
+            <div className='container--header'>
                 <div className='box'>
                     <figure>
                         <img src={logo} className="logo" alt="logo" />
@@ -11,6 +12,7 @@ function Header(){
                 <div className='box'>
                     <button className='btn-inicio'>Inicio</button> 
                 </div>
+            </div>
         </header>
     );
 }
