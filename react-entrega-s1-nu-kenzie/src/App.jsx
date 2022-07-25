@@ -1,5 +1,6 @@
 import React from 'react';
 import { useState } from 'react';
+import Home from './Components/Home';
 import Header from './Components/Header';
 import Form from './Components/Form';
 import Nav from './Components/Nav';
@@ -9,9 +10,13 @@ import CardPadrão from './Components/Lista-Padrão';
 import './App.css';
 
 function App() {
+  function logar(){
+    
+  }
   const [listTransactions, setListTransactions] = useState([
   ]);
   return (
+
     <div className="App">
       <Header/>
       <main>
