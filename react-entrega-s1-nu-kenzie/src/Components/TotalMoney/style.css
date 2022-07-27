@@ -27,7 +27,7 @@
     font-family: 'Nunito', sans-serif;
     font-style: normal;
 }
-.box__value{
+.box__value--money{
     display: flex;
     justify-content: space-between;
 }

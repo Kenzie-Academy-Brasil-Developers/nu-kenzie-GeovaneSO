@@ -1,4 +1,4 @@
-li{
+.li2{
     display: flex;
     flex-direction: column;
 
@@ -15,10 +15,32 @@ li{
     border-left: 4px solid  #FD377E;
 
 }
+.li{
+    display: flex;
+    flex-direction: column;
+
+    width: 300px;
+    height: 95px;
+
+    padding: 20px;
+    padding-top: 0;
+    padding-bottom: 20px;
+
+    background: #F8F9FA;
+
+    border-radius: 4px;
+    border-left: 4px solid  #5abf57;
+
+}
 
 .container{
     display: flex;
     justify-content: space-between;
+}
+.box__description{
+    width: 140px;
+    display: flex;
+    justify-content: flex-start;
 }
 
 .description{
@@ -38,6 +60,8 @@ li{
     font-weight: 400;
     font-size: 12px;
     line-height: 22px;
+
+    width: 60px;
 
     color: #212529;
 }

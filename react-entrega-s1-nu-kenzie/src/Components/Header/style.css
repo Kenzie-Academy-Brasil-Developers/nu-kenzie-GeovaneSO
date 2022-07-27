@@ -15,8 +15,8 @@
 .container--header{
     display: flex;
     /* justify-content: center; */
-    justify-content: space-around;
-    /* padding: 0 30px; */
+    justify-content: space-between;
+    padding: 0 60px;
     width: 100%;
 
 }
@@ -48,7 +48,7 @@
 @media(min-width:1000px){
     .header{
  
-        /* justify-content: space-around; */
+        justify-content: space-between;
         gap: 600px;
         
     }
