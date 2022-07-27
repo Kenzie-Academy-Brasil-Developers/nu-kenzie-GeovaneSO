@@ -10,13 +10,17 @@ import CardPadrão from './Components/Lista-Padrão';
 import './App.css';
 
 function App() {
-  function logar(){
+  // function logar(){
     
-  }
-  const [listTransactions, setListTransactions] = useState([
-  ]);
-  return (
+  // }
+  const [listTransactions, setListTransactions] = useState([ ]);
+  const [list, setList] = useState('Todos');
 
+  const maped =  listTransactions.filter((transaction) => transaction.type === list).map((transaction, index) => (
+      <Card key={index} transaction={transaction} setListTransactions={setListTransactions} listTransactions={listTransactions}/>
+  ));   
+
+  return (
     <div className="App">
       <Header/>
       <main>
@@ -25,23 +29,24 @@ function App() {
           {
             listTransactions.length > 0 &&
             <TotalMoney listTransactions={listTransactions}/>
-
           }
         </section>
         <section className='section--list'>
-          <Nav listTransactions={listTransactions} setListTransactions={setListTransactions}/>
+          <Nav setList={setList} listTransactions={listTransactions} setListTransactions={setListTransactions}/>
           <ul>
             { 
               listTransactions.length === 0 ?
-              <>
-                <CardPadrão/>
-                <CardPadrão/>
-                <CardPadrão/>
-              </>
-              :
-              listTransactions.map((transaction, index) => (
-                <Card key={index} transaction={transaction} setListTransactions={setListTransactions} listTransactions={listTransactions}/>
-              ))                
+                <>
+                  <CardPadrão/>
+                  <CardPadrão/>
+                  <CardPadrão/>
+                </>
+                :
+                list === 'Todos' ?
+                  listTransactions.map((transaction, index) => (
+                    <Card key={index} transaction={transaction} setListTransactions={setListTransactions} listTransactions={listTransactions}/>
+                  )) :  
+                    maped
             }       
           </ul>
         </section>
