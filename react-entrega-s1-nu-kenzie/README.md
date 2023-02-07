@@ -1,3 +1,6 @@
+Deploy da aplicação: https://nu-kenzie-theta-seven.vercel.app/
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
